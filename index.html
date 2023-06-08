@@ -10,20 +10,23 @@
 	<div class="container">
 		<div class="items">
 			<div class="item" id="summer" >
-				<img src="/src/assets/icons/sun.svg" alt="">
+				<audio id="summerSound" src="/src/assets/sounds/summer.mp3"></audio>
+				<img src="/src/assets/icons/sun.svg" alt="sun">
 			</div>
 			<div class="item" id="rain" >
-				<img src="/src/assets/icons/cloud-rain.svg" alt="">
+				<audio id="rainSound" src="/src/assets/sounds/rain.mp3"></audio>
+				<img src="/src/assets/icons/cloud-rain.svg" alt="cloud-rain">
 			</div>
 			<div class="item" id="winter" >
-				<img src="/src/assets/icons/cloud-snow.svg" alt="">
+				<audio id="winterSound" src="/src/assets/sounds/winter.mp3"></audio>
+				<img src="/src/assets/icons/cloud-snow.svg" alt="cloud-snow">
 			</div>
 		</div>
 		<div class="slider">
-			<input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+			<input type="range" min="0" max="1" value="0.5" class="slider" id="myRange" step="0.01">
 		</div>
 	</div>
 	<footer class="footer"></footer>
-
+	<script src="/src/js/index.js"></script>
 </body>
 </html>
